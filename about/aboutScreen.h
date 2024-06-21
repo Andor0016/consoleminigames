@@ -1,0 +1,10 @@
+//
+// Created by andor on 6/21/2024.
+//
+
+#ifndef CONSOLEMINIGAMES_ABOUTSCREEN_H
+#define CONSOLEMINIGAMES_ABOUTSCREEN_H
+
+void printAboutScreen();
+
+#endif //CONSOLEMINIGAMES_ABOUTSCREEN_H

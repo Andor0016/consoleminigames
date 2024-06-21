@@ -4,4 +4,5 @@ project(consoleminigames)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(consoleminigames
-        main.cpp)
+        main.cpp
+        about/aboutScreen.cpp)
