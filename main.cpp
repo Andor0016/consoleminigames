@@ -1,4 +1,5 @@
 #include <iostream>
+#include "about/aboutScreen.h"
 
 using namespace std;
 
@@ -43,6 +44,7 @@ int main(){
         case 'r':
             break;
         case 'a':
+            printAboutScreen();
             break;
         case 'e':
             break;
