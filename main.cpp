@@ -23,6 +23,13 @@ char menuScreen(){
     return choice;
 }
 
+void exitScreen(){
+    cout << "##########################################################################" << endl;
+    cout << "#                        Thanks for playing!                             #" << endl;
+    cout << "#                             Good bye!                                  #" << endl;
+    cout << "##########################################################################" << endl;
+}
+
 char normalizeInput(char input){
     if( input >= 65 && input <= 90){
         return input + 32;
@@ -34,22 +41,28 @@ char normalizeInput(char input){
 
 int main(){
     welcomeScreen();
-    char choice = menuScreen();
+    bool loop = true;
 
-    switch(normalizeInput(choice)){
-        case 'x':
-            break;
-        case 'm':
-            break;
-        case 'r':
-            break;
-        case 'a':
-            printAboutScreen();
-            break;
-        case 'e':
-            break;
-        default:
-            break;
+    while(loop){
+        char choice = menuScreen();
+        switch(normalizeInput(choice)){
+            case 'x':
+
+                break;
+            case 'm':
+                break;
+            case 'r':
+                break;
+            case 'a':
+                printAboutScreen();
+                break;
+            case 'e':
+                exitScreen();
+                loop = false;
+                break;
+            default:
+                break;
+        }
     }
 
     return 0;
