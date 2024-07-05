@@ -1,5 +1,6 @@
 #include <iostream>
 #include "about/aboutScreen.h"
+#include "mastermind/mastermind.h"
 
 using namespace std;
 
@@ -19,6 +20,7 @@ char menuScreen(){
     cout << " E - Exit" << endl;
     cout << " Your choice: ";
     cin >> choice;
+    cout << endl;
 
     return choice;
 }
@@ -28,6 +30,7 @@ void exitScreen(){
     cout << "#                        Thanks for playing!                             #" << endl;
     cout << "#                             Good bye!                                  #" << endl;
     cout << "##########################################################################" << endl;
+    system("pause");
 }
 
 char normalizeInput(char input){
@@ -50,6 +53,7 @@ int main(){
 
                 break;
             case 'm':
+                startMastermind();
                 break;
             case 'r':
                 break;
