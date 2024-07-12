@@ -5,5 +5,6 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(consoleminigames
         main.cpp
-        about/aboutScreen.cpp
+        common/common.cpp
+        screen/screen.cpp
         mastermind/mastermind.cpp)
