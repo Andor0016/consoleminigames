@@ -7,4 +7,5 @@ add_executable(consoleminigames
         main.cpp
         common/common.cpp
         screen/screen.cpp
-        mastermind/mastermind.cpp)
+        mastermind/mastermind.cpp
+        rockpapperscissor/rockpapperscissor.cpp)

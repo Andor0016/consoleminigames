@@ -9,3 +9,7 @@ char charToLower(char input){
         return input;
     }
 }
+
+int getRandomNumber(int upperNumber){
+
+}

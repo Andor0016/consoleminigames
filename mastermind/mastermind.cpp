@@ -18,17 +18,6 @@ char color(int num){
     return ' ';
 }
 
-string createRandomColors(){
-    string rc = "";
-    int random;
-    for(int i=0; i<4; i++)
-    {
-        random = 1 + rand() % 6;
-        rc += color(random);
-    }
-    return rc;
-}
-
 string checkAnswer(string original, string guess){
     string points = "";
     for(int i=0; i<4; i++){
@@ -56,7 +45,7 @@ int getPoints(string output){
 void startMastermind(){
     srand((unsigned)time(NULL));
     mastermindDescription();
-    string randomColors = createRandomColors();
+    string randomColors = color(getRandomNumber(6));
     string input;
     int points;
     for(int i=0; i<4; i++){

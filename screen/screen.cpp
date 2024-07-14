@@ -15,7 +15,7 @@ char menuScreen(){
     cout << " Please choice from the menu:" << endl;
     cout << " X - XoX" << endl;
     cout << " M - Mastermind" << endl;
-    cout << " R - Rock - Paper - Scissors" << endl;
+    cout << " R - Rock - Paper - Scissor" << endl;
     cout << " A - About" << endl;
     cout << " E - Exit" << endl;
     cout << " Your choice: ";
@@ -63,6 +63,35 @@ void mastermindResults(int points){
         cout << "YOU WON!" << endl;
     }
     cout << "You found 4/" << points << "." << endl << endl << endl << endl;
+}
+
+void rockPaperScissorDescription(){
+    cout << "##########################################################################" << endl;
+    cout << "#                            ROCK-PAPER-SCISSOR                          #" << endl;
+    cout << "#                  The game random generates a choice.                   #" << endl;
+    cout << "#        You need to write your choice to the input field, like:         #" << endl;
+    cout << "#                  R-Rock                                                #" << endl;
+    cout << "#                  P-Paper                                               #" << endl;
+    cout << "#                  S-Scissor                                             #" << endl;
+    cout << "#                Your input if your guess is Scissor: \"S\"              #" << endl;
+    cout << "#                               Good luck!                               #" << endl;
+    cout << "##########################################################################" << endl;
+}
+
+void rockPaperScissorResults(int result, string game, string player){
+    if(result == 1){
+        cout << "YOU WON!" << endl;
+        cout << "CONGRATULATIONS!" << endl;
+    }
+    else if(result == -1){
+        cout << "YOU LOST!" <<endl;
+        cout << "BETTER LUCK NEXT TIME!" << endl;
+    }
+    else{
+        cout << "IT'S A TIE!" << endl;
+    }
+    cout << "Game's choice was: " << game << endl;
+    cout << "Your choice was: " << player <<endl;
 }
 
 void exitScreen(){

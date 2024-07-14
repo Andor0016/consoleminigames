@@ -1,0 +1,10 @@
+//
+// Created by andor on 14/7/2024.
+//
+
+#ifndef CONSOLEMINIGAMES_ROCKPAPPERSCISSOR_H
+#define CONSOLEMINIGAMES_ROCKPAPPERSCISSOR_H
+
+void startRockPaperScissor();
+
+#endif //CONSOLEMINIGAMES_ROCKPAPPERSCISSOR_H

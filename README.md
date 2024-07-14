@@ -2,7 +2,7 @@
 
 ## This project is for learning C++. 
 
-### The project contains three minigames, with multiple difficult.
+### The project contains three mini games.
 
   - XOX
   - Mastermind
